@@ -42,8 +42,16 @@ public class Candidato {
         return votos;
     }
 
-    public Candidato setVotos(int votos) {
+    public void setVotos(int votos) {
         this.votos = votos;
-        return this;
+    }
+
+    public double calcularCostoCampania() {
+        return votos;
+    }
+
+    @Override
+    public String toString() {
+        return "Ficha #" + numFicha + "    -    " + nombre + " " + apellido;
     }
 }
